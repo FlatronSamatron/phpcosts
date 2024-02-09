@@ -1,0 +1,7 @@
+.env
+
+src/vendor
+docker/storage
+
+node_modules
+public/build

@@ -1,0 +1,17 @@
+{
+    "name": "phpcosts/phpcosts",
+    "description": "A php application for tracking expenses.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "FlatronSamatron"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "Framework/",
+            "App\\": "App/"
+        }
+    }
+}

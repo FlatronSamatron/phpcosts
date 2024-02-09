@@ -1,3 +1,5 @@
 <?php
 
-echo 'hi';
+$app = include __DIR__ . '/../App/bootstrap.php';
+
+$app->run();
