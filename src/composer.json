@@ -12,6 +12,9 @@
         "psr-4": {
             "Framework\\": "Framework/",
             "App\\": "App/"
-        }
+        },
+        "files": [
+            "App/Config/Routes.php"
+        ]
     }
 }

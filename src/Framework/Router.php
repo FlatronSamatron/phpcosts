@@ -35,14 +35,10 @@ class Router
 
         foreach($this->routes as $route){
             if(!!preg_match("#^{$route['path']}$#", $path)){
-                // [$class, $function] = $route['controller'];
-                // $controllerInstance = new $class;
-                // $controllerInstance->$function();
-                
-                call_user_func($route['controller']);
+                [$class, $function] = $route['controller'];
+                $controllerInstance = new $class;
+                $controllerInstance->$function();
             }
         }
-
-        
     }
 }
