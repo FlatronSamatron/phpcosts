@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-function dd(mixed $value)
+function dd(mixed $value, $isStop = false)
 {
     echo '<pre>';
     var_dump($value);
     echo '</pre>';
-    die();
+
+    if ($isStop) {
+        die();
+    }
 }
 
 function e(mixed $value): string

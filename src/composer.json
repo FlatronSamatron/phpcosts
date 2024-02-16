@@ -1,20 +1,21 @@
 {
-    "name": "phpcosts/phpcosts",
-    "description": "A php application for tracking expenses.",
-    "type": "project",
-    "authors": [
-        {
-            "name": "FlatronSamatron"
-        }
-    ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Framework\\": "Framework/",
-            "App\\": "App/"
-        },
-        "files": [
-            "App/Config/Routes.php"
-        ]
+  "name": "phpcosts/phpcosts",
+  "description": "A php application for tracking expenses.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "FlatronSamatron"
     }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "Framework/",
+      "App\\": "App/"
+    },
+    "files": [
+      "App/Config/Routes.php",
+      "App/Config/Middleware.php"
+    ]
+  }
 }
