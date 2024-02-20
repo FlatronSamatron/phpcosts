@@ -35,7 +35,7 @@ class Router
         $method = strtoupper($method);
 
         foreach ($this->routes as $route) {
-            if (!!preg_match("#^{$route['path']}$#", $path)) {
+            if (!!preg_match("#^{$route['path']}$#", $path) && $route['method'] == $method) {
                 [$class, $function] = $route['controller'];
                 $controllerInstance = $container ? $container->resolve($class) : new $class;
                 $action = fn () => $controllerInstance->$function();
