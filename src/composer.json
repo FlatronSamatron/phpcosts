@@ -17,5 +17,8 @@
       "App/Config/Routes.php",
       "App/Config/Middleware.php"
     ]
+  },
+  "scripts" : {
+    "phpcosts": "php cli.php"
   }
 }
